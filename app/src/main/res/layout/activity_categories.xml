@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categories"
+    android:background="@color/gray">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <TableRow
+            android:id="@+id/categories_row_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:onClick="tropicanaOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_1_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category1_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:onClick="riceOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_2_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/categories_row_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:onClick="teaOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_3_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textView_category3_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:onClick="glassOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_4_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_corner"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category4_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/categories_row_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:onClick="corn_flakesOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_5_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category5_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:onClick="cansOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_6_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category6_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/categories_row_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:layout_margin="@dimen/categoryCellMarginValue"
+                android:layout_weight="1"
+                android:onClick="othersOnClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/category_7_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category7_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_category8"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner"
+                android:onClick="pritaniaOnClick"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/categoryCellMarginValue">
+
+                <ImageView
+                    android:id="@+id/category_8_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/categoryImageMarginSize"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_weight="6"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/textView_category8_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"></TextView>
+
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>

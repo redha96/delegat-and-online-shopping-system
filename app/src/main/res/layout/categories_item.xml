@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- i think that i didn't use the layout -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView_category_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

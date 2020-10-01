@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cartItemImage"
+            android:layout_width="@dimen/cartItemImageHeightAndWidth"
+            android:layout_height="@dimen/cartItemImageHeightAndWidth"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cartItemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+
+                    tools:text="title" />
+
+                <TextView
+                    android:id="@+id/cartItemNumberOfPackages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    tools:text="number of packages" />
+
+                <TextView
+                    android:id="@+id/totalPriceOfPackages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    tools:text="total price" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cartItemMessageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="message"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/deleteItemBtn"
+            android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+            android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+            android:background="@color/white"
+            android:tint="@color/green_1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

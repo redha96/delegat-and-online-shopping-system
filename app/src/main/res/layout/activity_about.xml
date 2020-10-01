@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_2"
+    tools:context=".About">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="This system developed by"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/redha_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:text="Redha Riyadh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/redha_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="redhareead@gmail.com"
+        android:textColorLink="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/redha_name"
+        app:layout_constraintTop_toBottomOf="@+id/redha_name" />
+
+    <TextView
+        android:id="@+id/redha_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="+9647712758802"
+        android:textColorLink="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/redha_email"
+        app:layout_constraintTop_toBottomOf="@+id/redha_email" />
+
+    <TextView
+        android:id="@+id/ali_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Ali Hamed"
+        app:layout_constraintStart_toStartOf="@+id/redha_phone"
+        app:layout_constraintTop_toBottomOf="@+id/redha_phone" />
+
+    <TextView
+        android:id="@+id/ali_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alihameddeel@gmail.com "
+        android:textColorLink="@color/blue"
+        android:autoLink="email"
+        app:layout_constraintStart_toStartOf="@+id/ali_name"
+        app:layout_constraintTop_toBottomOf="@+id/ali_name" />
+
+    <TextView
+        android:id="@+id/ali_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text="+9647716839837"
+        android:textColorLink="@color/blue"
+        app:layout_constraintStart_toStartOf="@+id/ali_name"
+        app:layout_constraintTop_toBottomOf="@+id/ali_email" />
+</androidx.constraintlayout.widget.ConstraintLayout>

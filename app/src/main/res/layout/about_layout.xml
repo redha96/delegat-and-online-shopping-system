@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2">
+
+
+
+        <LinearLayout
+            android:id="@+id/info_272_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/rounded_corner">
+
+
+
+
+            <TextView
+                android:id="@+id/title_of_272"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="272 Company"
+                android:textColor="@color/black"
+                android:textSize="38sp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/about_272_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="شركة 272 شركة مأكولات و مشروبات لمعلومات اكثر حول الشركة يمكنك التواصل معنا عبر :"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_of_272" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/about_272_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_272_textview">
+
+                <ImageView
+                    android:id="@+id/facebook_image_272_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/email_image_272_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/gmail" />
+
+
+                <ImageView
+                    android:id="@+id/phone_call_272_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/phone" />
+
+
+
+
+                <ImageView
+                    android:id="@+id/empty2_272_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></ImageView>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/info_odevs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/info_272_layout">
+
+            <TextView
+                android:id="@+id/title_of_odevs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="ODevs"
+                android:textColor="@color/black"
+                android:textSize="38sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/about_odevs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="مجموعة تهتم بتطوير البرامج و تكنلوجيا المعلومات يمكن التواصل معنا عبر :"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/facebook_image_odevs_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/facebook" />
+
+
+                <ImageView
+                    android:id="@+id/instagram_image_odevs_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/instagram" />
+
+
+                <ImageView
+                    android:id="@+id/email_image_odevs_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/gmail" />
+
+                <ImageView
+                    android:id="@+id/phone_call_odevs_btn"
+                    android:layout_width="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_height="@dimen/cartDeleteImageButtonHeightAndWidth"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/phone" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
